@@ -309,8 +309,8 @@ img { max-width: 100%; }
 }
 .contact-grid {
   display: grid;
-  grid-template-columns: minmax(320px, 1.05fr) minmax(300px, 0.9fr);
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   align-items: start;
 }
 .contact-panel .contact-card,
@@ -512,6 +512,11 @@ footer {
   .nav-menu.open { display: flex; }
   .hero-content h1 { font-size: 2.6rem; }
   .contact-grid { grid-template-columns: 1fr; }
+  .contact-card,
+  .contact-form { padding: 1.8rem; }
+  .contact-details > div { flex-direction: column; align-items: flex-start; }
+  .contact-details > div img { width: 48px; height: 48px; }
+  .contact-social { justify-content: flex-start; flex-wrap: wrap; }
   .stats { flex-direction: column; align-items: center; }
   .hero-graphic { display: none; }
 }
