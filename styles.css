@@ -307,13 +307,21 @@ img { max-width: 100%; }
 .contact-section {
   padding: 5rem 0 6rem;
   background: linear-gradient(180deg, #f7fbf8 0%, #ffffff 100%);
-  overflow: hidden;
+}
+.contact-section .container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   align-items: start;
+  width: 100%;
+}
+.contact-panel {
+  min-width: 0;
 }
 .contact-panel .contact-card,
 .contact-panel .contact-form {
