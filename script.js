@@ -142,5 +142,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  console.log('PC Green Soltions And Diversity Advisory Ltd — enterprise ready');
+  console.log('PC Green Solutions And Diversity Advisory Ltds Standards — enterprise ready');
 });
