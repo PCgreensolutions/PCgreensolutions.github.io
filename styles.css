@@ -248,7 +248,7 @@ img { max-width: 100%; }
   font-size: 1.05rem;
   line-height: 1.8;
 }
-.about-vision { padding: 3rem 0; }
+.about-vision { padding: 3rem 0 1rem; }
 .about-vision h2 {
   color: var(--primary);
   margin-top: 2rem;
@@ -257,6 +257,69 @@ img { max-width: 100%; }
   padding-bottom: 0.3rem;
 }
 .about-vision p { margin: 1rem 0 2rem; max-width: 800px; }
+
+.founder-story {
+  padding: 2rem 0 4rem;
+  background: linear-gradient(180deg, #f8faf8 0%, #ffffff 100%);
+}
+
+.founder-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.founder-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.founder-photo {
+  width: 100%;
+  max-width: 420px;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 25px 50px rgba(15, 59, 44, 0.16);
+  border: 6px solid rgba(255,255,255,0.75);
+}
+
+.founder-content {
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(15, 59, 44, 0.08);
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(15, 59, 44, 0.08);
+  padding: 2.2rem 2rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  background: rgba(230, 185, 30, 0.14);
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.founder-content h2 {
+  color: var(--primary);
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.founder-content blockquote {
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: #29473d;
+  font-style: normal;
+}
 
 /* ==========================
    SERVICES PAGE
@@ -547,6 +610,17 @@ footer {
   }
   .nav-menu.open { display: flex; }
   .hero-content h1 { font-size: 2.6rem; }
+  .founder-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .founder-photo {
+    height: 420px;
+    max-width: 360px;
+  }
+  .founder-content {
+    padding: 1.5rem 1.2rem;
+  }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-card,
   .contact-form { padding: 1.8rem; }
