@@ -1,4 +1,4 @@
-﻿// ==========================
+// ==========================
 // JS / script.js
 // ==========================
 document.addEventListener('DOMContentLoaded', function() {
@@ -142,5 +142,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  console.log('PC Green Solutions — enterprise ready');
+  console.log('PC Green Soltions And Diversity Advisory Ltd — enterprise ready');
 });
