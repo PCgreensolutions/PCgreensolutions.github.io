@@ -263,35 +263,59 @@ img { max-width: 100%; }
   background: linear-gradient(180deg, #f8faf8 0%, #ffffff 100%);
 }
 
-.founder-layout {
-  display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 2.5rem;
+.founder-shell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  max-width: 1100px;
 }
 
-.founder-image-wrap {
+.founder-visual {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  margin-bottom: -2.5rem;
+}
+
+.founder-curve {
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90vw, 780px);
+  height: 340px;
+  border: 2px solid rgba(15, 59, 44, 0.18);
+  border-bottom: none;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  pointer-events: none;
 }
 
 .founder-photo {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  max-width: 420px;
-  height: 560px;
+  max-width: 300px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 28px;
-  box-shadow: 0 25px 50px rgba(15, 59, 44, 0.16);
-  border: 6px solid rgba(255,255,255,0.75);
+  border-radius: 50% 50% 40% 40% / 42% 42% 58% 58%;
+  box-shadow: 0 18px 36px rgba(15, 59, 44, 0.14);
+  border: 5px solid rgba(255,255,255,0.9);
+  background: #f2f2f2;
 }
 
 .founder-content {
-  background: rgba(255,255,255,0.85);
+  position: relative;
+  z-index: 1;
+  width: min(100%, 900px);
+  background: rgba(255,255,255,0.92);
   border: 1px solid rgba(15, 59, 44, 0.08);
   border-radius: 22px;
-  box-shadow: 0 18px 40px rgba(15, 59, 44, 0.08);
-  padding: 2.2rem 2rem;
+  box-shadow: 0 18px 34px rgba(15, 59, 44, 0.08);
+  padding: 2.3rem 2rem 2rem;
 }
 
 .eyebrow {
@@ -319,6 +343,8 @@ img { max-width: 100%; }
   line-height: 1.9;
   color: #29473d;
   font-style: normal;
+  margin: 0;
+  text-align: left;
 }
 
 /* ==========================
